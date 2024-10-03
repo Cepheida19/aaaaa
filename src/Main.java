@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Tasha", -8);
-        cat1.setName("Tarrr");
+        cat1.setName("usha");
         //cat1.setAge(-6);
 
 
@@ -31,7 +31,9 @@ class Cat{
         return name;
     }
     public void setName(String name){
-        this.name = name;
+        if(name != null){
+            this.name = name;
+        }
     }
     public int getAge(){
         return age;
